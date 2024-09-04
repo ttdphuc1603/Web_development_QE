@@ -1,0 +1,467 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 0.5px;
+    text-align: justify;
+}
+
+
+body > * {
+    margin-bottom: 20px;
+}
+
+
+#navbar {
+    display: flex;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    margin-bottom: 0;
+    z-index: 2;
+    background-color: #fff;
+}
+
+.nav-item {
+    height: 100%;
+    text-align: center;
+    justify-content: right;
+    transition: background-color 0.3s ease;
+    padding: 10px 30px;
+    font-size:medium;
+
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%; 
+    height: 100%;
+    float: left;
+}
+
+.nav-item:hover {
+    background-color:#fff321;
+}
+
+.nav-item i {
+    margin-right: 8px;
+    color: #000;
+}
+
+
+.nav-item i {
+    margin-right: 8px;
+    color: #000;
+}
+
+.search-icon {
+    margin-left: auto;
+}
+
+.search-icon:hover {
+    background-color: white;
+}
+
+.search-icon i {
+    font-size: 18px;
+    cursor: pointer;
+    color: #000;
+}
+
+.search-icon i:hover {
+    color: #fff321;
+}
+
+
+
+.mainContent {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    padding-left: 200px;
+    padding-right: 200px;
+    color: black;
+    font-size: 15px;
+    margin-bottom: 20px;
+
+}
+
+#aboutMe, #portfolio, #contact {
+    width: 100%;
+    margin-bottom: 20px;
+    
+}
+
+@media only screen and (max-width: 950px) {
+    .mainContent {
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-bottom: 20px;
+    }
+}
+
+.session {
+    padding-top: 40px;
+}
+
+
+#aboutMe > h1, p {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#aboutName {
+    background-color: #fff321;
+    padding: 10px 20px;
+    font-size: larger;
+    text-align: center;
+    position: absolute;
+    z-index: 1;
+}
+
+div#profileImg {
+    display: grid;
+    grid-template-columns: 45% 55%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+#profileImg > div:first-child {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#aboutMe img {
+    width: 85%;
+    opacity: 70%;
+    padding-left: 0;
+}
+
+#aboutMe img:hover {
+    opacity: 100%;
+}
+
+#profileSkill {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+#profileSkill p {
+    margin-bottom: 10px;
+
+}
+
+.skillname {
+    letter-spacing: 0.75rem;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: medium;
+}
+
+#aboutMe table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#aboutMe table tr {
+    height: 40px;
+}
+
+#aboutMe table td:last-child {
+    width: 100%;
+    background-color: rgb(225, 225, 225);
+}
+
+#aboutMe table td:first-child {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+#Photography {
+    width: 90%;
+}
+
+#WebDesign {
+    width: 85%;
+}
+
+#Photoshop {
+    width: 75%;
+}
+
+#headerImage ,#portfolioGeneral, #portfolioTitle, #contactTitle {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    padding: 20px 0;
+    display: flex;
+}
+
+
+#portfolioGeneral {
+    justify-content: space-around;
+    background-color: grey;
+    color: white;
+}
+
+.portfolioGenItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    text-align: center;
+}
+
+
+.portfolioNum {
+    font-size: x-large;
+}
+
+#headerImage, #portfolioTitle, #contactTitle {
+    justify-content: center;
+    height: 500px;
+    background-size: cover;
+    opacity: 70%;
+    margin-bottom: 30px;
+}
+
+
+#portfolioTitle >div, #headerImage > div, #contactTitle >div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff321;
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: 10px;
+    color: #000000;
+    text-align: center;
+    padding: 20px 30px;
+}
+
+
+#headerImage > div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff321;
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: 10px;
+    color: #000000;
+    text-align: center;
+    padding: 20px; /* Optional padding */
+}
+
+#headerImage {
+    background-image: url(./asset/1.jpg);
+}
+
+#portfolioTitle {
+    background-image: url(./asset/3.jpg);
+}
+
+#contactTitle {
+    background-image: url(./asset/4.webp);
+}
+
+#gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Adjust number of columns as needed */
+    grid-gap: 10px;
+    flex-direction: row;
+    margin: 20px;
+}
+
+.galleryPhoto {
+    text-align: center;
+}
+
+.galleryPhoto img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+#loadMoreBtn {
+    display: flex;
+    padding: 10px 20px;
+    background-color: rgb(245, 245, 245);
+    color: black;
+    border: none;
+    cursor: pointer;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    font-size: medium;
+}
+
+#loadMoreBtn:hover {
+    background-color: gainsboro;
+}
+
+#fullImageModal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0);
+    z-index: 3;
+}
+
+#fullImageContainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#fullImage {
+    max-width: 80%;
+    max-height: auto;
+}
+
+#fullImageDesc {
+    margin-top: 20px;
+    color: white;
+}
+
+#closeModalBtn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #fff;
+    color: #000;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+#workLocation {
+    display: grid;
+    grid-template-columns: 40% 55%;
+    gap: 5%;
+    margin: 20px 0;
+}
+
+#map-container iframe {
+    justify-content: center;
+    width: 100% !important;
+    height: 250px !important;
+}
+
+table#contactInfo {
+    padding-bottom: 20px;
+}
+table#contactInfo tr td:first-child {
+    padding: 5px 10px
+}
+
+.contact-form {
+    padding-top: 20px;
+}
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+  
+.contact-form textarea {
+    margin-top: 10px;
+    height: 100px;
+}
+  
+#sendMessagebtn {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    height: 50px;
+}
+
+#footer {
+    color: white;
+    background-color: black;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    padding: 100px 0;
+    display: flex;
+}
+
+
+#footer a {
+    text-decoration: none;
+    color: black;
+}
+
+
+#toTheTopbtn {
+    background-color: #fff321;
+    color: black;
+    font-size: medium;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+}
+
+#toTheTopbtn:hover {
+    background-color: #ccc;
+}
+
+#socialMedia {
+    margin-top: 10px;
+}
+
+#socialMedia > a {
+    color: white;
+    font-size: 1.5em; /* Adjust size of the icon */
+}

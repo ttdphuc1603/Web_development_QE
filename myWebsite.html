@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/990e52b220.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="myCSS.css">
+</head>
+
+<body id="home" name="#home" class="mainContent">
+    <nav id="navbar">
+        <div class="nav-item"><a href="#home"><i class="fas fa-home"></i> HOME</a></div>
+        <div class="nav-item"><a href="#aboutMe"><i class="fas fa-user"></i> ABOUT</a></div>
+        <div class="nav-item"><a href="#portfolio"><i class="fas fa-th"></i> PORTFOLIO</a></div>
+        <div class="nav-item"><a href="#contact"><i class="fas fa-envelope"></i> CONTACT</a></div>
+        <div class="nav-item search-icon"><i class="fas fa-search"></i></div>
+    </nav>
+    
+    <header>
+        <div id="headerImage">
+            <div>JWW'S FILM</div>
+          </div>
+    </header>
+    
+    <div id="aboutMe" name="aboutMe" class="session">
+        <div style="padding:15px 0">
+            <p style="font-size: x-large; z-index: 2;">ABOUT ME</p>
+            <p>
+                <i>I love photography</i>
+            </p>
+        </div>
+        <div>
+            I'm Wonwoo, and I've always had a passion for capturing moments through the lens of a camera. There’s something truly magical about freezing time in a frame and sharing those glimpses of the world with others. <br><br>
+            I remember the first time I picked up a camera. It was like discovering a new language, a way to express myself and connect with the world around me. I started experimenting with different angles, lighting, and compositions, trying to find my own unique style. <br><br>
+            Over the years, my passion for photography has only grown stronger. I love the challenge of capturing the perfect shot, the satisfaction of seeing my vision come to life, and the opportunity to share my work with others.
+        </div>
+        <div id="profileImg" style="padding-bottom: 30px;">
+            <div>
+                <div id="aboutName">
+                    <b>JEON WONWOO</b>
+                </div>
+                <div style="padding-top: 30px; text-align: center;">
+                    <img src="./asset/2_1.jpg" alt="Headshot">
+                </div>
+            </div>
+            <div>
+                I created this blog as a space to showcase my photography and connect with people who share my love for art and visual storytelling. Whether it's a breathtaking landscape, a candid moment, or a carefully crafted portrait, I hope my photos inspire and evoke emotions in you.<br><br>
+                I believe that photography has the power to tell stories, evoke emotions, and inspire change. It's a way to connect with people from all walks of life and share our experiences and perspectives.<br><br>
+                Feel free to explore my work, leave a comment, or reach out to me directly. Let's share our passion for photography together!
+            </div>
+        </div>
+        <div id="profileSkill">
+            <p>Im really good at:</p>
+            <div class="skill">
+                <div class="skillname"><i class="fa-solid fa-camera"></i>&nbsp;Photography</div>
+                <table>
+                    <tr>
+                        <td id="Photography">90%</td>
+                        <td>&nbsp</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="skill">
+                <div class="skillname"><i class="fa-solid fa-laptop"></i>&nbsp;Web Design</div>
+                <table>
+                    <tr>
+                        <td id="WebDesign">85%</td>
+                        <td>&nbsp</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="skill" style="padding-bottom: 30px;">
+                <div class="skillname"><i class="fa-solid fa-image"></i>&nbsp;Photoshop</div>
+                <table>
+                    <tr>
+                        <td id="Photoshop">75%</td>
+                        <td>&nbsp</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+    <div id="portfolio" name="portfolio" class="session">
+        <div id="portfolioGeneral">
+            <div class="portfolioGenItem">
+                <div class="portfolioNum">14+</div>
+                <div class="portfolioDesc">Partners</div>
+            </div>
+            <div class="portfolioGenItem">
+                <div class="portfolioNum">55+</div>
+                <div class="portfolioDesc">Projects Done</div>
+            </div>
+            <div class="portfolioGenItem">
+                <div class="portfolioNum">89+</div>
+                <div class="portfolioDesc">Happy Clients</div>
+            </div>
+            <div class="portfolioGenItem">
+                <div class="portfolioNum">150+</div>
+                <div class="portfolioDesc">Meetings</div>
+            </div>
+        </div>
+        <div id="portfolioTitle">
+            <div>PORTFOLIO</div>
+        </div>
+        <div style="padding:15px 0">
+            <p style="font-size: x-large;">MY WORKS</p>
+            <p>
+                <i>Here are some of my latest works</i>
+            </p>
+            <p>
+                <I>Click on the images to make them bigger</I>
+            </p>
+        </div>
+        
+        <div id="gallery">
+        </div>
+        <div style="display: flex; justify-content: center;">
+            <button id="loadMoreBtn">LOAD MORE</button>
+        </div>
+        <div id="fullImageModal" style="display: none">
+            <div>
+                <div id="fullImageContainer">
+                    <img id="fullImage" src="" alt="Full Image">
+                    <div id="fullImageDesc"></div>
+                </div>
+                
+                <button id="closeModalBtn">X</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact" name="#contact" class="session">
+        <div id="contactTitle" style="display: flex; justify-content: center; align-items: center;">
+          <div>CONTACT</div>
+        </div>
+        <div style="padding:15px 0">
+            <p style="font-size: x-large;">WHERE I WORK</p>
+            <p>
+            <i>I'd love your feedback!</i>
+            </p>
+        </div>
+        <div id="workLocation">
+          <div>
+            <div id="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3164.2897184316807!2d126.96165267574318!3d37.524667272049385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca1dfe9605e1f%3A0x3d65021f362cdfde!2sPledis%20Entertainment!5e0!3m2!1svi!2s!4v1725425795621!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                    width="300" 
+                    height="200"
+                    frameborder="0" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    aria-hidden="false" 
+                    tabindex="0">
+                </iframe>
+            </div>
+          </div>
+          <div>
+            <table id="contactInfo">
+                <tbody>
+                    <tr>
+                        <td><i class="fa-solid fa-location-dot"></i></td>
+                        <td>Korea, Yongsan, Hangang-daero</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fa-solid fa-phone"></i></td>
+                        <td>Phone: 19960717</td>
+                      </tr>
+                      <tr>
+                        <td><i class="fa-solid fa-envelope"></i></td>
+                        <td>Email: jww_film@svt.com</td>
+                      </tr>
+                </tbody>
+            </table>
+            <div>Swing by for a &nbsp; <i class="fa-solid fa-mug-saucer"></i>&nbsp; of coffee, or leave me a note:</div>
+            <div class="contact-form">
+                <div style="display: flex; justify-content: space-between; gap: 10px;">
+                    <div style="width: 50%;">
+                        <input type="text" id="name" name="name" placeholder="Name" required>
+                    </div>
+                    <div style="width: 50%;">
+                        <input type="email" id="email" name="email" placeholder="Email" required>
+                    </div>
+                </div>
+                <div>
+                    <textarea id="message" name="message" placeholder="Message" required></textarea>
+                </div>
+                <div style="display: flex; justify-content: right;">
+                    <button id="sendMessagebtn" type="submit"><i class="fa-solid fa-paper-plane"></i>&nbsp;&nbsp;SEND MESSAGE</button>
+                </div>
+            </div>            
+          </div>
+        </div>
+      </div>
+
+    <footer id="footer">
+        <div id="toTheTopbtn"><a href="#home"><i class="fa-solid fa-up-long"></i>&nbsp;To the top</a></div>
+        <div id="socialMedia">
+            <a href="https://www.facebook.com/seventeennews/"><i class="fa-brands fa-square-facebook"></i></a> &nbsp;
+            <a href="https://www.instagram.com/film_jww/"><i class="fa-brands fa-instagram"></i>&nbsp;
+            <a href="https://x.com/pledis_17"><i class="fa-brands fa-twitter"></i>&nbsp;
+            <a href="https://www.youtube.com/@pledis17"><i class="fa-brands fa-youtube"></i>
+        </div>
+    </footer>
+</body>
+<script src="myJavascript.js"></script>
+
+</html>
